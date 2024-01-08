@@ -34,7 +34,7 @@ class AppRouteConfigStateNotifier extends StateNotifier<AppRouteConfig> {
 final navigationProvider =
     StateNotifierProvider<AppRouteConfigStateNotifier, AppRouteConfig>((ref) =>
         AppRouteConfigStateNotifier(
-            state: AppRouteConfig(routeConfig: [LaunchPath()])));
+            state: AppRouteConfig(routeConfig: [HomePath()])));
 
 typedef NavigationProvider
     = StateNotifierProvider<AppRouteConfigStateNotifier, AppRouteConfig>;

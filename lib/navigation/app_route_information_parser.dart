@@ -21,7 +21,6 @@ class AppRouteInformationParser extends RouteInformationParser<AppRouteConfig> {
 
   @override
   RouteInformation restoreRouteInformation(AppRouteConfig configuration) {
-    print(configuration.routeConfig);
     Uri uri = Uri(pathSegments: [
       for (AppPath appPath in configuration.routeConfig)
         switch (appPath.runtimeType) {
